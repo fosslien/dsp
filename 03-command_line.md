@@ -9,9 +9,9 @@ tutorial](https://web.archive.org/web/20160708171659/http://cli.learncodethehard
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
-env returns a list of environment variables
-cp copies files
-rm removes files
+env returns a list of environment variables  
+cp copies files  
+rm removes files  
 
 ---
 
@@ -20,11 +20,11 @@ rm removes files
 What do the following commands do:  
 `ls`  - lists all contents of a directory  
 `ls -a`  - lists lists all contents of a directory, including hidden files and directories  
-`ls -l` - lists all contents in long format
-`ls -lh` - lists all contents in long format, prints sizes in human readable format
-`ls -lah` - lists lists all contents of a directory, including hidden files and directories, prints sizes in human readable format
-`ls -t` - orders files and directories by the time they were last modified
-`ls -Glp` - inhibits display of group information, lists all contents of a directory, appends indicator (one of /=@|) to entries
+`ls -l` - lists all contents in long format  
+`ls -lh` - lists all contents in long format, prints sizes in human readable format  
+`ls -lah` - lists lists all contents of a directory, including hidden files and directories, prints sizes in human readable format  
+`ls -t` - orders files and directories by the time they were last modified  
+`ls -Glp` - inhibits display of group information, lists all contents of a directory, appends indicator (one of /=@|) to entries  
 
 ---
 
@@ -32,11 +32,11 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
--t	Displays newest files first (based on timestamp)
--c	Displays files by file timestamp
--m	Displays the names as a comma-separated list
--x	Displays files as rows across the screen
--1	Displays each entry on a line
+-t	Displays newest files first (based on timestamp)  
+-c	Displays files by file timestamp  
+-m	Displays the names as a comma-separated list  
+-x	Displays files as rows across the screen  
+-1	Displays each entry on a line  
 
 ---
 
