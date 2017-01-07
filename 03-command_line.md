@@ -9,16 +9,16 @@ tutorial](https://web.archive.org/web/20160708171659/http://cli.learncodethehard
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
-env returns a list of environment variables  
-cp copies files  
-rm removes files  
-this >> redirects standard output of a command to a file, appending new content to old content  
-| redirects standard output of a command to another command  
-sort sorts lines of text alphabetically  
-uniq filters duplicate, adjacent lines of text  
-grep searches for a text pattern and outputs it  
-sed searches for a text pattern, modifies it, and outputs it  
-nano opens the nano text editor  
+`env` returns a list of environment variables  
+`cp` copies files  
+`rm` removes files  
+`>>` redirects standard output of a command to a file, appending new content to old content  
+`|` redirects standard output of a command to another command  
+`sort` sorts lines of text alphabetically  
+`uniq` filters duplicate, adjacent lines of text  
+`grep` searches for a text pattern and outputs it  
+`sed` searches for a text pattern, modifies it, and outputs it  
+`nano` opens the nano text editor  
 
 ---
 
