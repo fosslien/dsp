@@ -18,8 +18,8 @@ rm removes files
 ###Q2.  List Files in Unix   
 
 What do the following commands do:  
-`ls`  - lists all contents of a directory
-`ls -a`  - lists lists all contents of a directory, including hidden files and directories
+`ls`  - lists all contents of a directory  
+`ls -a`  - lists lists all contents of a directory, including hidden files and directories  
 `ls -l` - lists all contents in long format
 `ls -lh` - lists all contents in long format, prints sizes in human readable format
 `ls -lah` - lists lists all contents of a directory, including hidden files and directories, prints sizes in human readable format
