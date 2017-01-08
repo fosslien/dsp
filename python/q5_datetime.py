@@ -17,9 +17,10 @@ date_stop = '05282015'
 
 from datetime import datetime
 
-d0 = datetime.strptime('12312013', '%M%d%Y')
-d1 = datetime.strptime('05282015', '%M%d%Y')
+d0 = datetime.strptime('12312013', '%m%d%Y')
+d1 = datetime.strptime('05282015', '%m%d%Y')
 print d1 - d0
+
 
 ####c)  
 date_start = '15-Jan-1994'  
