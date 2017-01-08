@@ -10,6 +10,12 @@ date_stop = '07-28-2015'
 date_start = '12312013'  
 date_stop = '05282015'  
 
+from datetime import datetime
+
+d0 = datetime.strptime('12312013', '%M%d%Y')
+d1 = datetime.strptime('05282015', '%M%d%Y')
+print d1 - d0
+
 ####c)  
 date_start = '15-Jan-1994'  
 date_stop = '14-Jul-2015'  
