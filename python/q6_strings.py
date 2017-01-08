@@ -25,24 +25,14 @@ string = raw_input("Type in a string: ")
 both_ends(string)
 
 
-
 def fix_start(s):
-    """
-    Given a string s, return a string where all occurences of its
-    first char have been changed to '*', except do not change the
-    first char itself. e.g. 'babble' yields 'ba**le' Assume that the
-    string is length 1 or more.
+    first = s[:1]
+    rest = s[1:]
+    if first in s:
+        print first + rest.replace(first,'*')
 
-    >>> fix_start('babble')
-    'ba**le'
-    >>> fix_start('aardvark')
-    'a*rdv*rk'
-    >>> fix_start('google')
-    'goo*le'
-    >>> fix_start('donut')
-    'donut'
-    """
-    raise NotImplementedError
+string = raw_input("Enter a string: ")
+fix_start(string)
 
 
 def mix_up(a, b):
