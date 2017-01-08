@@ -4,6 +4,11 @@
 date_start = '01-02-2013'  
 date_stop = '07-28-2015'  
 
+from datetime import datetime
+
+d0 = datetime.strptime('01-02-2013', '%m-%d-%Y')
+d1 = datetime.strptime('07-28-2015', '%m-%d-%Y')
+print d1 - d0
  
 
 ####b)  
