@@ -3,22 +3,40 @@
 
 
 def match_ends(words):
-    """
-    Given a list of strings, return the count of the number of strings
-    where the string length is 2 or more and the first and last chars
-    of the string are the same.
+    total = 0
+    for word in words:
+        if len(word) > 1:
+            if word[:1] == word [-1:]:
+                total += 1
+            else:
+                total += 0
+    print total
 
-    >>> match_ends(['aba', 'xyz', 'aa', 'x', 'bbb'])
-    3
-    >>> match_ends(['', 'x', 'xy', 'xyx', 'xx'])
-    2
-    >>> match_ends(['aaa', 'be', 'abc', 'hello'])
-    1
-    """
-    raise NotImplementedError
+
+input = raw_input("Enter a bunch of words: ")
+words = list(input.split())
+match_ends(words)
 
 
 def front_x(words):
+    nlist = []
+    for word in words:
+        if word[:1] == "x":
+            words.remove(word)
+            nlist.append(word)
+    sortedwords = sorted(words)
+    sortednlist = sorted(nlist)
+    print sortednlist
+    print sortednlist + sortedwords
+
+
+
+
+
+
+input = raw_input("Enter a bunch of words: ")
+words = list(input.split())
+front_x(words)
     """
     Given a list of strings, return a list with the strings in sorted
     order, except group all the strings that begin with 'x' first.
@@ -36,6 +54,11 @@ def front_x(words):
 
 
 def sort_last(tuples):
+    print sorted(tuples, key=lambda x: x[1])
+
+input = raw_input("Enter a bunch of words: ")
+tuples = tuple(map(int,input.split(',')))
+sort_last(tuples)
     """
     Given a list of non-empty tuples, return a list sorted in
     increasing order by the last element in each tuple.
@@ -53,36 +76,30 @@ def sort_last(tuples):
 
 
 def remove_adjacent(nums):
-    """
-    Given a list of numbers, return a list where all adjacent equal
-    elements have been reduced to a single element, so [1, 2, 2, 3]
-    returns [1, 2, 3]. You may create a new list or modify the passed
-    in list.
+    i = 1
+    while i < len(nums):
+        if nums[i] == nums[i-1]:
+            nums.pop(i)
+            i -= 1
+        i += 1
+    print nums
 
-    >>> remove_adjacent([1, 2, 2, 3])
-    [1, 2, 3]
-    >>> remove_adjacent([2, 2, 3, 3, 3])
-    [2, 3]
-    >>> remove_adjacent([3, 2, 3, 3, 3])
-    [3, 2, 3]
-    >>> remove_adjacent([])
-    []
-    """
-    raise NotImplementedError
+
+
+input = raw_input("Enter a bunch of numbers: ")
+nums = list(input.split())
+remove_adjacent(nums)
+
 
 
 def linear_merge(list1, list2):
-    """
-    Given two lists sorted in increasing order, create and return a
-    merged list of all the elements in sorted order. You may modify
-    the passed in lists. Ideally, the solution should work in "linear"
-    time, making a single pass of both lists.
+    mergedlist = list1 + list2
+    print sorted(mergedlist)
 
-    >>> linear_merge(['aa', 'xx', 'zz'], ['bb', 'cc'])
-    ['aa', 'bb', 'cc', 'xx', 'zz']
-    >>> linear_merge(['aa', 'xx'], ['bb', 'cc', 'zz'])
-    ['aa', 'bb', 'cc', 'xx', 'zz']
-    >>> linear_merge(['aa', 'aa'], ['aa', 'bb', 'bb'])
-    ['aa', 'aa', 'aa', 'bb', 'bb']
-    """
-    raise NotImplementedError
+
+input1 = raw_input("Enter a bunch of words: ")
+input2 = raw_input("Enter a bunch of words: ")
+list1 = list(input1.split())
+list2 = list(input2.split())
+linear_merge(list1, list2)
+
