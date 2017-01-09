@@ -33,46 +33,30 @@ def front_x(words):
 
 
 
+def front_x(words):
+    nlist = []
+    for word in words:
+        if word[:1] == "x":
+            nlist.append(word)
+    nwords = [word for word in words if word not in nlist]
+    sortednlist = sorted(nlist)
+    sortednwords = sorted(nwords)
+    print sortednlist + sortednwords
 
 input = raw_input("Enter a bunch of words: ")
 words = list(input.split())
 front_x(words)
-    """
-    Given a list of strings, return a list with the strings in sorted
-    order, except group all the strings that begin with 'x' first.
-    e.g. ['mix', 'xyz', 'apple', 'xanadu', 'aardvark'] yields
-         ['xanadu', 'xyz', 'aardvark', 'apple', 'mix'].
 
-    >>> front_x(['bbb', 'ccc', 'axx', 'xzz', 'xaa'])
-    ['xaa', 'xzz', 'axx', 'bbb', 'ccc']
-    >>> front_x(['ccc', 'bbb', 'aaa', 'xcc', 'xaa'])
-    ['xaa', 'xcc', 'aaa', 'bbb', 'ccc']
-    >>> front_x(['mix', 'xyz', 'apple', 'xanadu', 'aardvark'])
-    ['xanadu', 'xyz', 'aardvark', 'apple', 'mix']
-    """
-    raise NotImplementedError
 
+
+
+from ast import literal_eval
 
 def sort_last(tuples):
     print sorted(tuples, key=lambda x: x[1])
 
-input = raw_input("Enter a bunch of words: ")
-tuples = tuple(map(int,input.split(',')))
+tuples = literal_eval(raw_input("Please enter the data: "))
 sort_last(tuples)
-    """
-    Given a list of non-empty tuples, return a list sorted in
-    increasing order by the last element in each tuple.
-    e.g. [(1, 7), (1, 3), (3, 4, 5), (2, 2)] yields
-         [(2, 2), (1, 3), (3, 4, 5), (1, 7)].
-
-    >>> sort_last([(1, 3), (3, 2), (2, 1)])
-    [(2, 1), (3, 2), (1, 3)]
-    >>> sort_last([(2, 3), (1, 2), (3, 1)])
-    [(3, 1), (1, 2), (2, 3)]
-    >>> sort_last([(1, 7), (1, 3), (3, 4, 5), (2, 2)])
-    [(2, 2), (1, 3), (3, 4, 5), (1, 7)]
-    """
-    raise NotImplementedError
 
 
 def remove_adjacent(nums):
